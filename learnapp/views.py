@@ -12,4 +12,12 @@ def jane(request):
     return HttpResponse("hello-jane")
 
 def greet(request, name):
-    return HttpResponse(f"Hello, {name}!")
+    return render(request, "lesrnapp/greet.html")
+
+def greet(request, name):
+    return render(request, "learnapp/greet.html", {
+        "name": name.capitalize()
+    })
+
+def index(request):
+    return render(request, "learnapp/index.html")

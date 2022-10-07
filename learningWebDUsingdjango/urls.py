@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('learnapp/', include("learnapp.urls")),
     path('diwali/', include("diwali.urls")),
+    path('tasks/', include("tasks.urls")),
 ]
